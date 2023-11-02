@@ -1,0 +1,47 @@
+<html>
+
+<head>
+
+<style>
+h2 {
+   font-size : 30px;
+   color : green;
+   font-weight : bold;
+   text-decoration : underline;
+}
+
+</style>
+</head>
+
+<body>
+<center>
+
+<h2>Display output in p tag</h2>
+<br>
+
+<br>
+
+enter the number :
+
+
+
+<input type="text" id="txt1" ><br>
+enter the number :
+<input type="text" id="txt2" >
+<button onclick="myFunction()">Print</button>
+<p id="y"></p>
+
+<script>
+function myFunction() {
+var x = parseInt(document.getElementById("txt1").value);
+var a = parseInt(document.getElementById("txt2").value);
+var b=x+a;
+document.getElementById("y").innerHTML = b;
+
+}
+</script>
+
+</center>
+
+</body>
+</html>
